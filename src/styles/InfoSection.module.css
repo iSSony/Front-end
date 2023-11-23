@@ -1,0 +1,65 @@
+.progressBar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+.progressBarActive {
+  color: #006b5a !important;
+}
+
+.progressBarList {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+.progressAccount:before {
+  content: "1";
+}
+
+.progressPersonal:before {
+  content: "2";
+}
+
+.progressPayment:before {
+  content: "3";
+}
+
+.progressConfirm:before {
+  content: "4";
+}
+
+.progressBarList:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+.progressBarList:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+.progressBarActive:before,
+.progressBarActive:after {
+  background: #006b5a !important;
+}

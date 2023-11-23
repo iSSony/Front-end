@@ -1,0 +1,34 @@
+.profileWrapper {
+  border-radius: 8px;
+  background-color: #e9e9ed;
+  padding: 28px;
+
+  min-height: 450px;
+}
+
+.profileInput {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  background: #ffffff;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 40px;
+  color: #404d61;
+  padding-left: 8px;
+}
+
+.profileData {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  background: whitesmoke;
+  border: 1px solid #e9e9ed;
+  border-radius: 4px;
+  height: 40px;
+  color: #404d61;
+  padding-left: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,107 @@
+.moduleList {
+  background: #eff2ef;
+}
+
+.moduleSearchBar {
+  height: 3.75em;
+  display: block;
+  width: 100%;
+  border: 0;
+  background: #dae5e0;
+  padding: 0 1.5em;
+}
+
+.moduleSearchBar:focus {
+  outline: none;
+}
+
+.modules {
+  padding: 1em;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  max-height: 632px;
+  overflow-y: scroll;
+}
+
+.moduleCard {
+  background: #fafdfa;
+  border-radius: 14px;
+  margin-bottom: 8px;
+  border: 0;
+
+  > * {
+    border-radius: 14px;
+  }
+
+  .card-header {
+    background: #dae5e0 !important;
+    padding: 1.2em 1em !important;
+    border: 0;
+  }
+
+  .accordion-header {
+    background: #dae5e0;
+    padding: 1.2em 1.5em;
+  }
+  .card-body {
+    padding: 1em;
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+  .module-title {
+    color: #1c2729;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .moduleContentBtn {
+    text-align: start;
+    border: none;
+    border-radius: 14px;
+    display: flex;
+    padding: 1.2em;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 107, 90, 0.05),
+        rgba(0, 107, 90, 0.05)
+      ),
+      #fafdfa;
+    outline: none !important;
+  }
+  .currentModuleContentBtn {
+    text-align: start;
+    border: 1.5px solid #198754;
+    border-radius: 14px;
+    display: flex;
+    padding: 1.2em;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 107, 90, 0.05),
+        rgba(0, 107, 90, 0.05)
+      ),
+      #fafdfa;
+
+    outline: none !important;
+  }
+}
+
+.moduleContentControlButtons {
+  width: 120px;
+  height: 40px;
+}
+
+@media only screen and (max-width: 688px) {
+  .modules {
+    padding: 1em 0em !important;
+  }
+  .moduleCard {
+    .card-body {
+      padding: 0.3em !important;
+    }
+  }
+}

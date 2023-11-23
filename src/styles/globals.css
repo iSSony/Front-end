@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+body {
+  background: white;
+  margin: 0 !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  min-height: calc(100vh - 444.72px);
+}
+
+p {
+  line-height: 24px;
+}
+
+/* Modifying bootstrap success color */
+.btn-success {
+  background-color: #006b5a !important;
+}
+.btn-success:hover {
+  background-color: #014d40 !important;
+}
+.btn-outline-success {
+  border-color: #006b5a !important;
+}
+.btn-outline-success:hover {
+  background-color: #006b5a !important;
+}
+.text-success {
+  color: #006b5a !important;
+}
+.bg-success {
+  background-color: #006b5a !important;
+}
+
+/* Color For Stars */
+.icon-color {
+  color: gold;
+}
+/* Rating number text color */
+.rating {
+  color: #b4690e;
+  font-weight: bold;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.slick-dots li button:before {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.slick-prev:before {
+  display: none;
+}
+.slick-next:before {
+  display: none;
+}
